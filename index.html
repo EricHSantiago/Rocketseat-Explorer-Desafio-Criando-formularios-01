@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Intermediário</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Container Principal -->
+    <div class="page">
+
+      <!-- Cabeçalho da Página -->
+      <header>
+        <h1>Mentoria</h1>
+        <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+      </header>
+      <!-- Fim do Cabeçalho da Página -->
+
+      <!-- Formlário -->
+      <form id="my-form">
+
+        <!-- Formulário 1 - Informações pessoais -->
+        <fieldset>
+
+          <!-- Display Flex -->
+          <div class="fieldset-wrapper">
+            <legend>Informações pessoais</legend>
+
+            <!-- Classe - 2 Colunas Nome e Sobre nome -->
+            <div class="col-2">
+
+              <!-- Input Name -->
+              <div class="input-wrapper">
+                <label for="event-name">Nome</label>
+                <input
+                type="text"
+                id="event-name"
+                required />
+              </div>
+
+              <!-- Input Sobrename -->
+              <div class="input-wrapper">
+                <label for="event-sobrenome">Sobrenome</label>
+                <input
+                type="text"
+                id="event-sobrenome"
+                required />
+              </div>
+
+            </div>
+
+            <!-- Input Email -->
+            <div class="input-wrapper">
+              <label for="event-email">Email <span>(digite um email válido)</span></label>
+              <input
+              type="email"
+              id="event-email"
+              required />
+            </div>
+
+            <!-- Input Senha -->
+            <div class="input-wrapper">
+              <label for="event-password">Senha <span>(mínimo de 6 caracteres)</span></label>
+              <input
+              type="password"
+              id="event-password"
+              required 
+              minlength="6"/>
+            </div>
+
+          </div>
+        </fieldset>
+        <!-- Fim Formulário 1 -->
+
+        <!-- Formulário 2 - Informações do mentor -->
+        <fieldset>
+
+          <!-- Display Flex -->
+          <div class="fieldset-wrapper">
+            <legend>Informações do Mentor</legend>
+
+            <!-- Input Name -->
+            <div class="input-wrapper">
+              <label for="event-name">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+              <input
+              type="text"
+              id="event-name"
+              required />
+            </div>
+
+          </div>    
+        </fieldset>
+        <!-- Fim Formulário 2 - Informações do mentor -->
+
+        <!-- Formulário 3 - Seus Horários Disponíveis -->
+        <fieldset>
+
+          <!-- Primeira mentoria -->
+          <div class="fieldset-wrapper">
+            <legend>Seus horários disponíveis</legend>
+
+            <h4>Primeira mentoria</h4>
+
+            <!-- Fim Primeira mentoria -->
+            <div class="col-3">
+
+              <!-- Input Data -->
+              <div class="input-wrapper">
+                <label for="event-date">Data <span>(DD/MM/AAAA)</span></label>
+                <input
+                type="dete"
+                id="event-date"
+                required />
+              </div>
+
+              <!-- id - Space-col -->  
+              <div id="space-col">
+                
+                <!-- Input Time Begin -->
+                <div class="input-wrapper">
+                  <label for="event-begin">Das</label>
+                  <input
+                  type="time"
+                  id="event-begin"
+                  required />
+                </div>
+
+                <!-- Input Time End -->
+                <div class="input-wrapper">
+                  <label for="event-end">Até</label>
+                  <input
+                  type="time"
+                  id="event-end"
+                  required />
+                </div>
+
+              </div>
+              <!-- id - Space-col -->  
+
+            </div>
+            <!-- Fim Primeira mentoria -->
+
+            <!-- Segunda Monitoria -->
+            <h4>Segunda mentoria</h4>
+
+            <div class="col-3">
+              
+              <!-- Input Data -->
+              <div class="input-wrapper">
+                <label for="event-date">Data <span>(DD/MM/AAAA)</span></label>
+                <input
+                type="dete"
+                id="event-date"
+                required />
+              </div>
+
+              <!-- id - Space-col -->  
+              <div id="space-col">
+                
+                <!-- Input Time Begin -->
+                <div class="input-wrapper">
+                  <label for="event-begin">Das</label>
+                  <input
+                  type="time"
+                  id="event-begin"
+                  required />
+                </div>
+
+                <!-- Input Time End -->
+                <div class="input-wrapper">
+                  <label for="event-end">Até</label>
+                  <input
+                  type="time"
+                  id="event-end"
+                  required />
+                </div>
+
+              </div>
+              <!-- id - Space-col -->  
+
+            </div>
+            <!-- Segunda Monitoria -->
+
+          </div>
+
+        </fieldset>
+        <!-- Fim Formulário 3 -->
+
+      </form>
+      <!-- Fim Formlário -->
+
+      <footer>
+        <button class="button" form="my-form">
+          Salvar
+        </button>
+      </footer>
+
+    </div>
+    <!-- Fim Container Principal -->
+
+  </body>
+</html>
